@@ -188,4 +188,4 @@ This project is created for SparkNest Services. All rights reserved.
 
 **SparkNest Services** - Professional Home Cleaning & Maintenance  
 *Eco Plaza, 2nd Floor, Mombasa Road, Nairobi, Kenya*  
-*Phone: +254 727 110 245 | Email: hello@sparknest.co.ke* 
+*Phone: +254 727 110 245 | Email: hello@sparknest.co.ke* // Commit 12 - Create customer testimonials page
