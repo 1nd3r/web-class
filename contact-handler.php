@@ -232,3 +232,4 @@ function sendBookingNotification($data) {
 }
 ?>
 // Commit 9 - Add professional cleaning equipment details
+// Commit 19 - Add sample data for services and testimonials
