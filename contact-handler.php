@@ -231,3 +231,4 @@ function sendBookingNotification($data) {
     // mail($to, $subject, $message, $headers);
 }
 ?>
+// Commit 9 - Add professional cleaning equipment details
