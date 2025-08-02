@@ -190,3 +190,4 @@ This project is created for SparkNest Services. All rights reserved.
 *Eco Plaza, 2nd Floor, Mombasa Road, Nairobi, Kenya*  
 *Phone: +254 727 110 245 | Email: hello@sparknest.co.ke* // Commit 12 - Create customer testimonials page
 // Commit 22 - Add email notification system
+// Commit 32 - Add detailed pricing structure for all services
