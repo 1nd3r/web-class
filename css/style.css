@@ -1,222 +1,250 @@
-/* SpeedyWheels Car Rental - Main Stylesheet */
-/* 4-Color Theme: Navy Blue (#2c3e50), Orange (#e67e22), Light Gray (#ecf0f1), White (#ffffff) */
+/**
+ * SpeedyWheels Car Rental - Clean & Simple Styles
+ * 
+ * Hey there! This is our main stylesheet for the car rental site.
+ * We're keeping it simple with just a couple colors and clean typography.
+ * The main colors are dark gray (#333) and blue (#007bff) - nothing fancy!
+ */
 
-/* Global Reset and Base Styles */
+/* Reset everything so we start fresh - browsers are weird with default styles */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* makes padding/borders stay inside elements */
 }
 
+/* Main page styling - this affects everything */
 body {
-    font-family: 'Arial', 'Helvetica', sans-serif;
-    line-height: 1.6;
-    color: #2c3e50;
-    background-color: #ecf0f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* clean, readable fonts */
+    line-height: 1.6; /* gives text some breathing room */
+    color: #333; /* dark gray text is easier on the eyes than pure black */
+    background-color: #f8f9fa; /* super light gray background */
 }
 
+/* Container keeps our content centered and not too wide */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1100px; /* looks good on most screens */
+    margin: 0 auto; /* centers the content */
+    padding: 0 20px; /* some space on the sides */
 }
 
-/* Navigation Styles */
+/* 
+ * Navigation Bar
+ * Simple horizontal menu that looks clean and works on all devices
+ */
 .nav {
-    background-color: #2c3e50;
+    background-color: #fff; /* white background keeps it clean */
     padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    border-bottom: 1px solid #ddd; /* subtle line to separate from content */
+    text-align: center; /* center all the menu links */
 }
 
+/* Individual navigation links */
 .nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 0 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    color: #333; /* dark text for good contrast */
+    text-decoration: none; /* remove the ugly underlines */
+    padding: 8px 16px; /* comfortable click area */
+    margin: 0 8px; /* space between links */
+    border-radius: 4px; /* slightly rounded corners look friendlier */
+    transition: background-color 0.2s ease; /* smooth color change on hover */
+    font-weight: 500; /* slightly bolder text */
 }
 
+/* What happens when you hover over a link */
 .nav a:hover {
-    background-color: #e67e22;
-    transform: translateY(-2px);
+    background-color: #007bff; /* nice blue background */
+    color: white; /* white text on blue background */
 }
 
-/* Header Styles */
+/* 
+ * Page Headers - The big title at the top of each page
+ * Keeping it simple with just a white box and clean text
+ */
 .heading {
-    background: linear-gradient(135deg, #2c3e50, #e67e22);
-    color: #ffffff;
-    text-align: center;
-    padding: 40px 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #fff; /* white background to stand out */
+    color: #333; /* dark text for readability */
+    text-align: center; /* center the title */
+    padding: 40px 20px; /* generous padding so it doesn't feel cramped */
+    margin: 20px 0; /* space above and below */
+    border: 1px solid #ddd; /* subtle border to define the area */
+    border-radius: 4px; /* slightly rounded corners */
 }
 
+/* The actual page title text */
 .heading h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: 2.2em; /* big enough to be important, not overwhelming */
+    margin-bottom: 10px; /* little space if there's text below */
+    font-weight: 600; /* semi-bold looks professional */
 }
 
-/* Main Content Layout */
+/* 
+ * Main Content Area
+ * This is where we split the page into the main content and sidebar
+ * We use flexbox because it's flexible and works well on mobile
+ */
 main {
-    display: flex;
-    gap: 30px;
-    margin: 30px 0;
-    flex-wrap: wrap;
+    display: flex; /* side-by-side layout */
+    gap: 20px; /* space between main content and sidebar */
+    margin: 20px 0; /* space above and below the content */
+    flex-wrap: wrap; /* wraps to vertical on small screens */
 }
 
+/* The main content area (left side on desktop) */
 .leftSide {
-    flex: 2;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    min-width: 300px;
+    flex: 2; /* takes up 2/3 of the space */
+    background-color: #fff; /* white background for content */
+    padding: 24px; /* comfortable reading space */
+    border: 1px solid #ddd; /* subtle border */
+    border-radius: 4px; /* rounded corners */
+    min-width: 300px; /* doesn't get too narrow on small screens */
 }
 
+/* Section titles within the main content */
 .leftSide h2 {
-    color: #2c3e50;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #e67e22;
-    padding-bottom: 10px;
+    color: #333; /* keep it dark and readable */
+    font-size: 1.6em; /* prominent but not overpowering */
+    margin-bottom: 16px; /* space before the content */
+    border-bottom: 2px solid #007bff; /* blue underline to add some color */
+    padding-bottom: 8px; /* space between text and underline */
+    font-weight: 600; /* semi-bold for importance */
 }
 
+/* Smaller headings within sections */
 .leftSide h3 {
-    color: #2c3e50;
-    margin: 20px 0 15px 0;
+    color: #333; /* consistent dark text */
+    margin: 20px 0 12px 0; /* space above and below */
+    font-weight: 600; /* semi-bold */
 }
 
+/* Regular paragraph text */
 .leftSide p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    color: #2c3e50;
+    font-size: 1em; /* normal reading size */
+    margin-bottom: 16px; /* space between paragraphs */
+    color: #555; /* slightly lighter gray for body text */
+    line-height: 1.6; /* comfortable line spacing for reading */
 }
 
+/* 
+ * Highlights Section (like the "Why Choose Us" list)
+ * We style this as a clean list without bullet points
+ */
 .highlights ul {
-    list-style: none;
-    padding-left: 0;
+    list-style: none; /* remove bullet points */
+    padding-left: 0; /* remove default indentation */
 }
 
+/* Individual highlight items */
 .highlights li {
-    background-color: #ecf0f1;
-    margin: 8px 0;
-    padding: 10px 15px;
-    border-left: 4px solid #e67e22;
-    transition: transform 0.3s ease;
+    background-color: #f8f9fa; /* very light gray background */
+    margin: 6px 0; /* small space between items */
+    padding: 10px 14px; /* comfortable padding inside each item */
+    border-left: 3px solid #007bff; /* blue accent line on the left */
+    border-radius: 4px; /* slightly rounded corners */
 }
 
-.highlights li:hover {
-    transform: translateX(10px);
-    background-color: #e67e22;
-    color: #ffffff;
-}
-
-/* Sidebar Styles */
+/* 
+ * Sidebar (Right Side)
+ * This contains the quick booking form and other side content
+ */
 .sidebar {
-    flex: 1;
-    min-width: 280px;
+    flex: 1; /* takes up 1/3 of the space (leftSide takes 2/3) */
+    min-width: 280px; /* doesn't get too narrow */
 }
 
+/* The boxes in the sidebar (quick booking, popular cars, etc.) */
 .quick-booking, .popular-cars {
-    background-color: #ffffff;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #fff; /* white background to match main content */
+    padding: 20px; /* comfortable padding inside */
+    margin-bottom: 20px; /* space between sidebar sections */
+    border: 1px solid #ddd; /* subtle border */
+    border-radius: 4px; /* slightly rounded corners */
 }
 
+/* Titles for sidebar sections */
 .quick-booking h3, .popular-cars h3 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 1.3em;
+    color: #333; /* dark text */
+    margin-bottom: 16px; /* space below the title */
+    text-align: center; /* center the title in the box */
+    font-size: 1.2em; /* slightly bigger than normal text */
+    font-weight: 600; /* semi-bold */
 }
 
-/* Form Styles */
+/* 
+ * Quick Booking Form
+ * The little form in the sidebar for getting quotes
+ */
 .quick-booking form {
-    display: flex;
+    display: flex; /* stack inputs vertically */
     flex-direction: column;
-    gap: 15px;
+    gap: 12px; /* space between form fields */
 }
 
+/* Form input fields */
 .quick-booking input {
-    padding: 12px;
-    border: 2px solid #ecf0f1;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: border-color 0.3s ease;
+    padding: 10px 12px; /* comfortable padding inside the fields */
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 4px; /* slightly rounded corners */
+    font-size: 1em; /* normal text size */
 }
 
+/* When someone clicks into an input field */
 .quick-booking input:focus {
-    border-color: #e67e22;
-    outline: none;
-    box-shadow: 0 0 5px rgba(230, 126, 34, 0.3);
+    border-color: #007bff; /* blue border to show it's active */
+    outline: none; /* remove the default browser outline */
 }
 
+/* The submit button */
 .quick-booking button {
-    background-color: #e67e22;
-    color: #ffffff;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #007bff; /* blue background */
+    color: white; /* white text */
+    padding: 10px 12px; /* same padding as inputs for consistency */
+    border: 1px solid #007bff; /* matching border */
+    border-radius: 4px; /* same rounded corners */
+    font-size: 1em; /* same text size */
+    cursor: pointer; /* show it's clickable */
+    font-weight: 500; /* slightly bold text */
 }
 
+/* When someone hovers over the button */
 .quick-booking button:hover {
-    background-color: #d35400;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #0056b3; /* darker blue on hover */
 }
 
 /* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 8px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 th {
-    background-color: #2c3e50;
-    color: #ffffff;
-    padding: 15px 10px;
-    text-align: left;
-    font-weight: bold;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 12px 10px;
+            text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
 }
 
 td {
-    padding: 12px 10px;
-    border-bottom: 1px solid #ecf0f1;
-    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
 }
 
 tr:nth-child(even) td {
-    background-color: #ecf0f1;
-}
-
-tr:hover td {
-    background-color: #e67e22;
-    color: #ffffff;
-    transform: scale(1.02);
-    transition: all 0.3s ease;
+    background-color: #f8f9fa;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #2c3e50;
-    color: #ffffff;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 30px 0;
-    margin-top: 50px;
+    padding: 24px 0;
+    margin-top: 40px;
 }
 
 .footer-content p {
@@ -269,11 +297,171 @@ footer {
     }
 }
 
-/* Animation Classes */
-.hover-effect:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
+/* Form Validation Styles */
+.error {
+    border-color: #dc3545 !important;
+    background-color: #fff5f5 !important;
+}
+
+.valid {
+    border-color: #28a745 !important;
+    background-color: #f8fff8 !important;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: none;
+    padding: 4px 8px;
+    background-color: #fff5f5;
+    border-left: 3px solid #dc3545;
+    border-radius: 4px;
+}
+
+.success-message {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 16px 0;
+    text-align: center;
+    display: none;
+}
+
+.form-error-message {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 16px 0;
+    text-align: center;
+    display: none;
+}
+
+/* Enhanced Form Styling */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #fff;
+}
+
+fieldset legend {
+    color: #333;
+    font-weight: 600;
+    padding: 0 8px;
+    font-size: 1em;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+        color: #333;
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea,
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus,
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.form-submit {
+        text-align: center;
+    margin-top: 24px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 32px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Form Styles */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    fieldset {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea,
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 1em;
+    }
+    
+    .submit-btn {
+        padding: 12px 30px;
+        font-size: 1.1em;
+    }
 }
 
 /* Utility Classes */
@@ -288,4 +476,97 @@ footer {
 .padding {
     padding: 20px;
 }
+
+/* 
+ * Portfolio-specific styles
+ * For Emmanuel Wonder's portfolio features
+ */
+
+/* Skills snapshot section in sidebar */
+.skills-snapshot {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.skills-snapshot h3 {
+    color: #333;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Container for skill tags */
+.skill-tags {
+        display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* Individual skill tags */
+.skill-tag {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover effect for skill tags */
+.skill-tag:hover {
+    background-color: #0056b3;
+    cursor: default;
+}
+
+/* Current focus section styling */
+.current-focus {
+    margin-top: 24px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #007bff;
+}
+
+.current-focus h3 {
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.current-focus p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.current-focus ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.current-focus li {
+    margin: 8px 0;
+    padding: 8px 12px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+}
+
+.current-focus strong {
+    color: #007bff;
+}
+
+/* Portfolio header enhancement */
+.heading p {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+    }
     

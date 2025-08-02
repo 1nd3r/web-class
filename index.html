@@ -4,9 +4,11 @@
     <!-- Meta information for the page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeedyWheels Car Rental - Home</title>
+    <title>SparkNest Services - Professional Home Cleaning & Maintenance</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Link to JavaScript validation -->
+    <script src="js/validation.js"></script>
 </head>
 
 <body>
@@ -15,7 +17,7 @@
         <a href="index.html">Home</a> |
         <a href="about.html">About Us</a> |
         <a href="services.html">Services</a> |
-        <a href="fleet.html">Our Fleet</a> |
+        <a href="fleet.html">Our Equipment</a> |
         <a href="booking.html">Book Now</a> |
         <a href="testimonials.html">Testimonials</a> |
         <a href="contact.html">Contact</a>
@@ -25,25 +27,41 @@
     <div class="container">
         <!-- Header section -->
         <header class="heading">
-            <h1>Welcome to SpeedyWheels Car Rental!</h1>
+            <h1>SparkNest Services</h1>
+            <p>Professional Home Cleaning & Maintenance Services | Nairobi, Kenya</p>
         </header>
 
         <!-- Main content area -->
         <main>
             <!-- Left content area -->
             <div class="leftSide">
-                <h2>Your Trusted Car Rental Partner</h2>
-                <p>Your trusted partner for reliable and affordable car rentals. Explore our fleet and book your ride today!</p>
+                <h2>Transform Your Space with Professional Cleaning Excellence</h2>
+                <p>Welcome to SparkNest Services, Nairobi's premier home cleaning and maintenance provider. We specialize in delivering exceptional cleaning services for residential and small commercial spaces, ensuring your environment is not just clean, but truly sparkling.</p>
                 
-                <!-- Company highlights -->
+                <!-- Our strengths -->
                 <div class="highlights">
-                    <h3>Why Choose SpeedyWheels?</h3>
+                    <h3>Why Choose SparkNest Services</h3>
                     <ul>
-                        <li>24/7 Customer Support</li>
-                        <li>Competitive Pricing</li>
-                        <li>Wide Range of Vehicles</li>
-                        <li>No Hidden Fees</li>
-                        <li>Free Pickup & Drop-off</li>
+                        <li>Professional & Trained Cleaning Staff</li>
+                        <li>Eco-Friendly Cleaning Products</li>
+                        <li>Industrial-Grade Equipment</li>
+                        <li>Flexible Scheduling Options</li>
+                        <li>Comprehensive Service Packages</li>
+                        <li>100% Satisfaction Guarantee</li>
+                    </ul>
+                </div>
+
+                <!-- Our services -->
+                <div class="current-focus">
+                    <h3>Our Comprehensive Services</h3>
+                    <p>We offer a wide range of professional cleaning and maintenance services:</p>
+                    <ul>
+                        <li><strong>General House Cleaning:</strong> Regular maintenance cleaning for homes</li>
+                        <li><strong>Deep Cleaning & Fumigation:</strong> Intensive cleaning and pest control</li>
+                        <li><strong>Carpet & Upholstery Cleaning:</strong> Professional fabric restoration</li>
+                        <li><strong>Post-Construction Clean-up:</strong> Post-renovation cleaning services</li>
+                        <li><strong>Office & Commercial Cleaning:</strong> Business space maintenance</li>
+                        <li><strong>Handyman Services:</strong> Plumbing, electrical, and painting</li>
                     </ul>
                 </div>
             </div>
@@ -52,46 +70,65 @@
             <aside class="sidebar">
                 <!-- Quick booking form -->
                 <div class="quick-booking">
-                    <h3>Quick Booking</h3>
+                    <h3>Book Your Cleaning Service</h3>
                     <form>
-                        <input type="text" placeholder="Enter your full name" required>
-                        <input type="email" placeholder="Enter your email" required>
-                        <input type="tel" placeholder="Enter your phone" required>
-                        <input type="date" placeholder="Pickup date" required>
-                        <button type="submit">Get Quote</button>
+                        <input type="text" placeholder="Your name" id="quickName" required>
+                        <span class="error" id="quickNameError"></span>
+                        
+                        <input type="email" placeholder="Your email" id="quickEmail" required>
+                        <span class="error" id="quickEmailError"></span>
+                        
+                        <input type="text" placeholder="Service type" id="quickProject" required>
+                        <input type="text" placeholder="Preferred date" id="quickTimeline" required>
+                        <button type="button" onclick="quickContactValidation()">Request Quote</button>
                     </form>
                 </div>
 
-                <!-- Popular car types table -->
+                <!-- Quick facts table -->
                 <div class="popular-cars">
-                    <h3>Popular Car Types</h3>
+                    <h3>Service Highlights</h3>
                     <table>
                         <tr>
-                            <th>Category</th>
-                            <th>Daily Rate</th>
-                            <th>Availability</th>
+                            <th>Service</th>
+                            <th>Details</th>
+                            <th>Status</th>
                         </tr>
                         <tr>
-                            <td>Economy</td>
-                            <td>$25/day</td>
+                            <td>Coverage</td>
+                            <td>Nairobi & Surroundings</td>
                             <td>Available</td>
                         </tr>
                         <tr>
-                            <td>Compact</td>
-                            <td>$35/day</td>
-                            <td>Available</td>
+                            <td>Equipment</td>
+                            <td>Industrial Grade</td>
+                            <td>Professional</td>
                         </tr>
                         <tr>
-                            <td>SUV</td>
-                            <td>$55/day</td>
-                            <td>Limited</td>
+                            <td>Products</td>
+                            <td>Eco-Friendly</td>
+                            <td>Safe & Green</td>
                         </tr>
                         <tr>
-                            <td>Luxury</td>
-                            <td>$85/day</td>
-                            <td>Available</td>
+                            <td>Staff</td>
+                            <td>Trained & Vetted</td>
+                            <td>Reliable</td>
                         </tr>
                     </table>
+                </div>
+
+                <!-- Services snapshot -->
+                <div class="skills-snapshot">
+                    <h3>Our Equipment</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Industrial Vacuums</span>
+                        <span class="skill-tag">Steam Cleaners</span>
+                        <span class="skill-tag">Carpet Shampooers</span>
+                        <span class="skill-tag">Power Washers</span>
+                        <span class="skill-tag">Fumigation Gear</span>
+                        <span class="skill-tag">Eco Products</span>
+                        <span class="skill-tag">Safety Equipment</span>
+                        <span class="skill-tag">Professional Tools</span>
+                    </div>
                 </div>
             </aside>
         </main>
@@ -100,8 +137,8 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 SpeedyWheels Car Rental. All rights reserved.</p>
-            <p>Contact us: info@speedywheels.com | 1-800-SPEEDY-1</p>
+            <p>&copy; 2024 SparkNest Services - Professional Home Cleaning & Maintenance. All rights reserved.</p>
+            <p>Contact: hello@sparknest.co.ke | Phone: +254 727 110 245 | Address: Eco Plaza, 2nd Floor, Mombasa Road, Nairobi, Kenya</p>
         </div>
     </footer>
 </body>

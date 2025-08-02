@@ -1,0 +1,4 @@
+q
+Get-Service | Where-Object {$_.Name -like "*mysql*" -or $_.DisplayName -like "*mysql*"}
+q
+mysql -u root -p

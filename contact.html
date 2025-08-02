@@ -4,9 +4,11 @@
     <!-- Meta information for the page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - SpeedyWheels Car Rental</title>
+    <title>Contact Us - SparkNest Services</title>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Link to JavaScript validation -->
+    <script src="js/validation.js"></script>
 </head>
 
 <body>
@@ -15,7 +17,7 @@
         <a href="index.html">Home</a> |
         <a href="about.html">About Us</a> |
         <a href="services.html">Services</a> |
-        <a href="fleet.html">Our Fleet</a> |
+        <a href="fleet.html">Our Equipment</a> |
         <a href="booking.html">Book Now</a> |
         <a href="testimonials.html">Testimonials</a> |
         <a href="contact.html">Contact</a>
@@ -25,15 +27,16 @@
     <div class="container">
         <!-- Header section -->
         <header class="heading">
-            <h1>Contact SpeedyWheels</h1>
+            <h1>Contact SparkNest Services</h1>
+            <p>Get in touch with us for all your cleaning and maintenance needs!</p>
         </header>
 
         <!-- Main content area -->
         <main>
             <!-- Left content area -->
             <div class="leftSide">
-                <h2>Get in Touch With Us</h2>
-                <p>We're here to help! Whether you have questions about our vehicles, need assistance with a booking, or want to provide feedback, our friendly team is ready to assist you.</p>
+                <h2>We're Here to Help</h2>
+                <p>Have questions about our services? Need a quote? Want to schedule a cleaning? We're here to help! Contact us through any of the methods below and we'll get back to you promptly.</p>
                 
                 <!-- Contact Form -->
                 <div class="contact-form-section">
@@ -56,66 +59,67 @@
                                 <input type="email" id="contactEmail" name="contactEmail" required>
                             </div>
                             <div class="form-group">
-                                <label for="contactPhone">Phone Number</label>
-                                <input type="tel" id="contactPhone" name="contactPhone">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="contactSubject">Subject *</label>
+                            <label for="contactSubject">What can we help you with? *</label>
                             <select id="contactSubject" name="contactSubject" required>
-                                <option value="">Select a subject</option>
-                                <option value="booking">Booking Inquiry</option>
-                                <option value="support">Customer Support</option>
-                                <option value="feedback">Feedback</option>
-                                <option value="corporate">Corporate Services</option>
-                                <option value="complaint">Complaint</option>
+                                <option value="">Select a topic</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="booking">Schedule a Service</option>
+                                <option value="consultation">Free Consultation</option>
+                                <option value="emergency">Emergency Service</option>
+                                <option value="question">General Question</option>
+                                <option value="feedback">Feedback/Complaint</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="contactMessage">Message *</label>
-                            <textarea id="contactMessage" name="contactMessage" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+                            <label for="contactMessage">Tell us about your needs *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="6" placeholder="Describe your cleaning needs, property details, preferred schedule, or any questions you have..." required></textarea>
                         </div>
 
                         <div class="form-submit">
                             <button type="submit" class="submit-btn">Send Message</button>
-                            <p><small>* Required fields. We'll respond within 24 hours.</small></p>
+                            <p><small>* Required fields. We'll respond within 2 hours!</small></p>
                         </div>
                     </form>
                 </div>
 
-                <!-- Office Locations -->
+                <!-- Office & Service Areas -->
                 <div class="office-locations">
-                    <h3>Our Office Locations</h3>
+                    <h3>Our Location & Service Areas</h3>
                     
                     <div class="location">
-                        <h4>Downtown Headquarters</h4>
-                        <p><strong>Address:</strong> 123 Main Street, Downtown, City 12345</p>
-                        <p><strong>Phone:</strong> (555) 123-4567</p>
-                        <p><strong>Hours:</strong> Mon-Fri: 7:00 AM - 9:00 PM, Sat: 8:00 AM - 8:00 PM, Sun: 9:00 AM - 6:00 PM</p>
+                        <h4>🏢 Office Location</h4>
+                        <p><strong>Address:</strong> Eco Plaza, 2nd Floor, Mombasa Road, Nairobi, Kenya</p>
+                        <p><strong>Business Hours:</strong> Monday - Friday: 7:00 AM - 7:00 PM</p>
+                        <p><strong>Weekend Hours:</strong> Saturday: 8:00 AM - 6:00 PM, Sunday: 9:00 AM - 5:00 PM</p>
                     </div>
 
                     <div class="location">
-                        <h4>Airport Terminal</h4>
-                        <p><strong>Address:</strong> International Airport, Terminal 2, Level 1</p>
-                        <p><strong>Phone:</strong> (555) 123-4568</p>
-                        <p><strong>Hours:</strong> Daily: 5:00 AM - 11:00 PM</p>
+                        <h4>📍 Service Areas</h4>
+                        <p><strong>Primary Coverage:</strong> Nairobi and surrounding areas</p>
+                        <p><strong>Areas We Serve:</strong> Westlands, Lavington, Kileleshwa, Karen, Kilimani, CBD, Langata, and more</p>
+                        <p><strong>Note:</strong> Contact us to confirm service availability in your area</p>
                     </div>
 
                     <div class="location">
-                        <h4>North Branch</h4>
-                        <p><strong>Address:</strong> 456 North Avenue, Northside, City 12346</p>
-                        <p><strong>Phone:</strong> (555) 123-4569</p>
-                        <p><strong>Hours:</strong> Mon-Fri: 8:00 AM - 7:00 PM, Sat-Sun: 9:00 AM - 5:00 PM</p>
+                        <h4>🚗 Mobile Service</h4>
+                        <p><strong>Service Type:</strong> We come to you with all necessary equipment</p>
+                        <p><strong>Setup Time:</strong> 10-15 minutes to set up professional equipment</p>
+                        <p><strong>Perfect for:</strong> Homes, offices, and commercial spaces</p>
                     </div>
 
                     <div class="location">
-                        <h4>South Branch</h4>
-                        <p><strong>Address:</strong> 789 South Boulevard, Southside, City 12347</p>
-                        <p><strong>Phone:</strong> (555) 123-4570</p>
-                        <p><strong>Hours:</strong> Mon-Fri: 8:00 AM - 7:00 PM, Sat-Sun: 9:00 AM - 5:00 PM</p>
+                        <h4>⏰ Emergency Services</h4>
+                        <p><strong>Available:</strong> 24/7 emergency cleaning services</p>
+                        <p><strong>Response Time:</strong> Within 2-4 hours for urgent situations</p>
+                        <p><strong>Best for:</strong> Post-construction, water damage, emergency sanitization</p>
                     </div>
                 </div>
             </div>
@@ -123,80 +127,92 @@
             <!-- Sidebar -->
             <aside class="sidebar">
                 <!-- Quick Contact Info -->
-                <div class="quick-contact">
-                    <h3>Quick Contact</h3>
+                <div class="quick-booking">
+                    <h3>Direct Contact</h3>
                     <div class="contact-method">
                         <h4>📞 Phone</h4>
-                        <p><strong>Main Line:</strong> 1-800-SPEEDY-1</p>
-                        <p><strong>Reservations:</strong> (555) 123-4567</p>
-                        <p><strong>Emergency:</strong> (555) 911-HELP</p>
+                        <p><strong>Main Line:</strong> +254 727 110 245</p>
+                        <p><strong>Response time:</strong> Within 30 minutes</p>
+                        <p><strong>Best for:</strong> Urgent bookings, immediate questions</p>
                     </div>
 
                     <div class="contact-method">
                         <h4>✉️ Email</h4>
-                        <p><strong>General:</strong> info@speedywheels.com</p>
-                        <p><strong>Bookings:</strong> bookings@speedywheels.com</p>
-                        <p><strong>Support:</strong> support@speedywheels.com</p>
+                        <p><strong>Email:</strong> hello@sparknest.co.ke</p>
+                        <p><strong>Response time:</strong> Within 2 hours</p>
+                        <p><strong>Best for:</strong> Detailed inquiries, quotes, feedback</p>
                     </div>
 
                     <div class="contact-method">
-                        <h4>💬 Live Chat</h4>
-                        <p>Available 24/7 on our website</p>
-                        <button class="chat-btn">Start Live Chat</button>
+                        <h4>💬 WhatsApp</h4>
+                        <p><strong>Available for:</strong> Quick questions, photo sharing</p>
+                        <p><strong>Hours:</strong> 7 AM - 7 PM (Nairobi time)</p>
+                        <p><em>Same number as phone: +254 727 110 245</em></p>
                     </div>
 
                     <div class="contact-method">
-                        <h4>📱 Social Media</h4>
-                        <p>Follow us for updates and special offers:</p>
-                        <ul>
-                            <li>Facebook: @SpeedyWheelsRental</li>
-                            <li>Twitter: @SpeedyWheels</li>
-                            <li>Instagram: @SpeedyWheelsOfficial</li>
-                            <li>LinkedIn: SpeedyWheels Car Rental</li>
-                        </ul>
+                        <h4>🏢 Office Visit</h4>
+                        <p><strong>Address:</strong> Eco Plaza, 2nd Floor, Mombasa Road</p>
+                        <p><strong>Hours:</strong> Mon-Fri: 7AM-7PM, Sat: 8AM-6PM</p>
+                        <p><strong>Best for:</strong> In-person consultations, payments</p>
                     </div>
                 </div>
 
-                <!-- Emergency Contact -->
-                <div class="emergency-contact">
-                    <h3>🚨 24/7 Emergency Support</h3>
-                    <p>Need immediate assistance? Our emergency support team is available around the clock.</p>
+                <!-- Response Times -->
+                <div class="popular-cars">
+                    <h3>Response Times</h3>
                     <table>
                         <tr>
-                            <th>Service</th>
-                            <th>Contact</th>
+                            <th>Contact Method</th>
+                            <th>Response Time</th>
+                            <th>Best For</th>
                         </tr>
                         <tr>
-                            <td>Roadside Assistance</td>
-                            <td>(555) 911-ROAD</td>
+                            <td>Phone Call</td>
+                            <td>Immediate</td>
+                            <td>Urgent bookings</td>
                         </tr>
                         <tr>
-                            <td>Vehicle Breakdown</td>
-                            <td>(555) 911-HELP</td>
+                            <td>WhatsApp</td>
+                            <td>Within 30 min</td>
+                            <td>Quick questions</td>
                         </tr>
                         <tr>
-                            <td>Accident Support</td>
-                            <td>(555) 911-SAFE</td>
+                            <td>Email</td>
+                            <td>Within 2 hours</td>
+                            <td>Detailed inquiries</td>
                         </tr>
                         <tr>
-                            <td>Lost Keys</td>
-                            <td>(555) 911-KEYS</td>
+                            <td>Office Visit</td>
+                            <td>Immediate</td>
+                            <td>In-person service</td>
                         </tr>
                     </table>
+                    <p><strong>Note:</strong> Emergency services available 24/7!</p>
                 </div>
 
-                <!-- FAQ Link -->
-                <div class="faq-link">
-                    <h3>❓ Frequently Asked Questions</h3>
-                    <p>Looking for quick answers? Check our FAQ section for common questions about:</p>
-                    <ul>
-                        <li>Booking procedures</li>
-                        <li>Vehicle requirements</li>
-                        <li>Insurance options</li>
-                        <li>Pricing and fees</li>
-                        <li>Pickup and return policies</li>
-                    </ul>
-                    <button class="faq-btn">View FAQ</button>
+                <!-- Common Questions -->
+                <div class="skills-snapshot">
+                    <h3>🤔 Frequently Asked Questions</h3>
+                    <p><strong>Quick answers to common questions:</strong></p>
+                    
+                    <p><strong>Q: How quickly can you schedule a service?</strong><br>
+                    A: We can often schedule same-day or next-day service depending on availability.</p>
+                    
+                    <p><strong>Q: Do you provide free quotes?</strong><br>
+                    A: Yes! We provide free, no-obligation quotes for all services.</p>
+                    
+                    <p><strong>Q: Are your products safe for children and pets?</strong><br>
+                    A: Absolutely! We use 100% eco-friendly, non-toxic cleaning products.</p>
+                    
+                    <p><strong>Q: Do you offer recurring service packages?</strong><br>
+                    A: Yes! We offer weekly, bi-weekly, and monthly cleaning packages with discounts.</p>
+                    
+                    <div class="skill-tags" style="margin-top: 15px;">
+                        <span class="skill-tag">Quick Response</span>
+                        <span class="skill-tag">Professional Service</span>
+                        <span class="skill-tag">Eco-Friendly</span>
+                    </div>
                 </div>
             </aside>
         </main>
@@ -205,8 +221,8 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 SpeedyWheels Car Rental. All rights reserved.</p>
-            <p>Contact us: info@speedywheels.com | 1-800-SPEEDY-1</p>
+            <p>&copy; 2024 SparkNest Services - Professional Home Cleaning & Maintenance. All rights reserved.</p>
+            <p>Contact: hello@sparknest.co.ke | Phone: +254 727 110 245 | Address: Eco Plaza, 2nd Floor, Mombasa Road, Nairobi, Kenya</p>
         </div>
     </footer>
 </body>
