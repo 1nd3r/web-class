@@ -297,3 +297,4 @@ try {
 ?> // Commit 8 - Create equipment showcase page
 // Commit 18 - Create all necessary database tables
 // Commit 28 - Add SEO optimization and meta tags
+// Commit 38 - Add emergency services information
