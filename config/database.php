@@ -295,3 +295,4 @@ try {
     error_log("Database connection error: " . $e->getMessage());
 }
 ?> // Commit 8 - Create equipment showcase page
+// Commit 18 - Create all necessary database tables
