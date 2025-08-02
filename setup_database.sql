@@ -180,3 +180,4 @@ SELECT 'SparkNest Services database setup completed successfully!' AS message;
 SELECT 'Created tables: services, testimonials, bookings, contact_messages, equipment, service_areas, pricing' AS tables_created; // Commit 11 - Add client-side form validation
 // Commit 21 - Add contact and booking form handler
 // Commit 31 - Create service areas coverage information
+// Commit 41 - Update testimonials with more customer feedback
