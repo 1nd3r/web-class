@@ -666,4 +666,4 @@ function quickContactValidation() {
  */
 
 // Let's get this validation party started!
-setupFormValidation(); 
+setupFormValidation(); // Commit 10 - Create service booking form
