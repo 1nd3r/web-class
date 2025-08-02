@@ -177,4 +177,4 @@ CREATE INDEX idx_pricing_service_id ON pricing(service_id);
 
 -- Show success message
 SELECT 'SparkNest Services database setup completed successfully!' AS message;
-SELECT 'Created tables: services, testimonials, bookings, contact_messages, equipment, service_areas, pricing' AS tables_created; 
+SELECT 'Created tables: services, testimonials, bookings, contact_messages, equipment, service_areas, pricing' AS tables_created; // Commit 11 - Add client-side form validation
