@@ -667,3 +667,4 @@ function quickContactValidation() {
 
 // Let's get this validation party started!
 setupFormValidation(); // Commit 10 - Create service booking form
+// Commit 20 - Setup PHP backend for form processing
