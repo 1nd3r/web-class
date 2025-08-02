@@ -294,4 +294,4 @@ try {
     // Log error or display user-friendly message
     error_log("Database connection error: " . $e->getMessage());
 }
-?> 
+?> // Commit 8 - Create equipment showcase page
