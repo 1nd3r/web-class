@@ -298,3 +298,4 @@ try {
 // Commit 18 - Create all necessary database tables
 // Commit 28 - Add SEO optimization and meta tags
 // Commit 38 - Add emergency services information
+// Commit 48 - Add team information and professional staff details
