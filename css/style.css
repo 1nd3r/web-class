@@ -1,9 +1,9 @@
-/**
- * SpeedyWheels Car Rental - Clean & Simple Styles
+﻿/**
+ * SparkNest Services - Professional Cleaning & Maintenance Styles
  * 
- * Hey there! This is our main stylesheet for the car rental site.
- * We're keeping it simple with just a couple colors and clean typography.
- * The main colors are dark gray (#333) and blue (#007bff) - nothing fancy!
+ * Clean and professional stylesheet for SparkNest Services website.
+ * We use a clean design with professional colors and typography.
+ * The main colors are dark gray (#333) and blue (#007bff) for a professional look.
  */
 
 /* Reset everything so we start fresh - browsers are weird with default styles */
@@ -151,8 +151,8 @@ main {
     min-width: 280px; /* doesn't get too narrow */
 }
 
-/* The boxes in the sidebar (quick booking, popular cars, etc.) */
-.quick-booking, .popular-cars {
+/* The boxes in the sidebar (quick booking, service highlights, etc.) */
+.quick-booking, .service-highlights {
     background-color: #fff; /* white background to match main content */
     padding: 20px; /* comfortable padding inside */
     margin-bottom: 20px; /* space between sidebar sections */
@@ -161,7 +161,7 @@ main {
 }
 
 /* Titles for sidebar sections */
-.quick-booking h3, .popular-cars h3 {
+.quick-booking h3, .service-highlights h3 {
     color: #333; /* dark text */
     margin-bottom: 16px; /* space below the title */
     text-align: center; /* center the title in the box */
@@ -280,7 +280,7 @@ footer {
         padding: 0 10px;
     }
     
-    .leftSide, .quick-booking, .popular-cars {
+    .leftSide, .quick-booking, .service-highlights {
         padding: 20px;
     }
     
@@ -568,5 +568,59 @@ fieldset legend {
     color: #666;
     margin-top: 8px;
     font-style: italic;
+}
+
+/* Before/After Showcase Styles */
+.before-after-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.before-after-item {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.before-after-item h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.before-after-item img {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.before-after-item img:hover {
+    transform: scale(1.02);
+}
+
+.before-after-item p {
+    margin-top: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive design for before/after showcase */
+@media (max-width: 768px) {
+    .before-after-showcase {
+        flex-direction: column;
+        align-items: center;
     }
     
+    .before-after-item {
+        min-width: 250px;
+        max-width: 100%;
+    }
+}
