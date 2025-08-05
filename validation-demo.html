@@ -260,9 +260,9 @@
             const isValid = validateEmailField('emailTest');
             
             if (isValid) {
-                alert('✅ Valid Email: ' + email);
+                alert(' Valid Email: ' + email);
             } else {
-                alert('❌ Invalid Email: ' + email);
+                alert(' Invalid Email: ' + email);
             }
         }
 
@@ -271,9 +271,9 @@
             const isValid = validateDateRange('pickupTest', 'returnTest');
             
             if (isValid) {
-                alert('✅ Valid Date Range');
+                alert(' Valid Date Range');
             } else {
-                alert('❌ Invalid Date Range - Check error messages above');
+                alert(' Invalid Date Range - Check error messages above');
             }
         }
 
@@ -283,9 +283,9 @@
             const lastName = validateNameField('lastNameTest', 'Last Name');
             
             if (firstName && lastName) {
-                alert('✅ Valid Names');
+                alert(' Valid Names');
             } else {
-                alert('❌ Invalid Names - Check error messages above');
+                alert(' Invalid Names - Check error messages above');
             }
         }
 
@@ -313,9 +313,9 @@
                     if (!validateDateRange('demoPickupDate', 'demoReturnDate')) isValid = false;
                     
                     if (isValid) {
-                        showSuccessMessage('🎉 All validation passed! Form is ready for submission.');
+                        showSuccessMessage(' All validation passed! Form is ready for submission.');
                     } else {
-                        showFormError('❌ Please correct the errors above before submitting.');
+                        showFormError(' Please correct the errors above before submitting.');
                     }
                 });
             }
