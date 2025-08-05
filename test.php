@@ -47,7 +47,7 @@ foreach ($files as $file) {
 echo "</ul>";
 
 echo "<p style='margin-top: 30px; padding: 10px; background-color: #f0f8ff; border-left: 4px solid #007bff;'>";
-echo "<strong>🎉 Congratulations!</strong> Your PHP server is running correctly for Emmanuel Wonder's portfolio!";
+echo "<strong> Congratulations!</strong> Your PHP server is running correctly for Emmanuel Wonder's portfolio!";
 echo "</p>";
 
 echo "</div>";
